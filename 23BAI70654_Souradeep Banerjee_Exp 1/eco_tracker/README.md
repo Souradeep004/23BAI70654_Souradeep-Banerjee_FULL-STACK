@@ -1,16 +1,41 @@
-# React + Vite
+# Eco Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with **React** and **Vite** to track and analyze carbon emissions from daily activities.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Eco Tracker helps users monitor their environmental impact by logging various daily activities and calculating the total carbon footprint. The application displays a comprehensive dashboard showing individual activity emissions and the cumulative carbon content.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Carbon Footprint Tracking**: Monitor carbon emissions from various activities including:
+  - Car Travel (4 kgs)
+  - Electricity Usage (6 kgs)
+  - Cycling (0 kgs)
+  - Public Transport (12 kgs)
+  - Meat Consumption (5 kgs)
+  - Plant-based Meals (2 kgs)
+  - Air Travel (1 kg)
 
-## Expanding the ESLint configuration
+- **Dashboard**: View a clean, intuitive dashboard displaying:
+  - **Total Carbon Footprint**: Aggregated emissions across all activities (30 kgs)
+  - **Activity Breakdown**: Detailed list of each activity and its carbon emissions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Design**: Dark theme UI with highlighted total carbon content for easy visualization
+
+
+## Project Structure
+
+```
+eco_tracker/
+├── src/
+│   ├── pages/
+│   │   ├── dashboard.jsx      # Main dashboard component
+│   │   └── logs.jsx           # Activity logs and data
+│   ├── App.jsx
+│   ├── main.jsx               # Application entry point
+│   └── index.css
+├── package.json
+├── vite.config.js
+└── README.md
+```
